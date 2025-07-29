@@ -1,0 +1,11 @@
+#这个文件必不可少
+#在训练之前需要准备好训练使用到的图片以及使用labelme标注后的txt文件
+#我这里新建了一个名为dyrs的文件夹（名字随意） 这个文件夹里还有images和labels两个文件夹
+#images和labels两个文件夹下又分别有train和val两个文件夹
+#images/train images/val 放练使用到的所有图片
+#labels/train labels/val 放所有使用labelme标注后的txt文件
+path: C:\Users\Lenovo\Desktop\Research group meeting\YOLO\dyrs #这里是随意命名文件夹的路径
+train: images/train #这是在随意命名文件夹下的相对路径 如果是按照上面注释做的这里路径不用改动
+val: images/val
+nc: 1 #识别的类别数 一个写1 两个写2
+names: ['person'] #识别的物体标签
